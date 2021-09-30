@@ -46,7 +46,7 @@ The details of the project can be found here: [project plan](/project_plan/proje
 ```
 
 
-## Group members:
+## Contributors:
 - Yundong Yao
 - Jan Urquico
 - Linxuan Yang
