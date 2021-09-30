@@ -1,23 +1,23 @@
-# Capstone_govt_of_canada
+# Semantic-classification-on-feedbacks
 
 ## Description
 
-Our capstone partner is the Canada Digital Analytics Team. The task is to help the websites visitors to more easily access to the information they are looking for. Visitors could fill a form when they encounter a problem (e.g. they could not find the information they want) and their feedback is then collected as text comments. We will build a multi-class classification model to predict the tag which could identify visitor's purpose. The hierarchy and classes of tags are given by our partner in Government of Canada. We are also open to improve the classes of tags using computational ligustic techniques we have learned in MDS-CL courses in a later stage of the project.
+The goal of this project is to help the Canada Digital Analytics Team (CDAT) classify or predict text feedback from users that visit the federal government website (canada.ca) into different tag groups and generate new tags using machine learning models in order to better understand the users’ needs.
 
-By the end of the project, our data product will enable our capstone partner to use state-of-the-art Machine Learning techniques to label visitor responses. Processing can be done a larger scale, at a higher speed, and at a lower cost. This may, in turn, help the stakeholders to better understand what people visit their website to do.
+We built two multi-class classification models -- Linear SVC and BERT (Devlin et al., 2019) --to predict tags that capture the users’ purpose for visiting the website. In order to provide more insight on users’ requests, we have developed two unsupervised models as well. One is a topic model that uses a RoBERTa architecture (Bhanja, 2020) to generate new tags from users’ feedback, another is a hierarchical clustering model which could cluster the feedback into groups in different levels. To improve the efficiency and performance of our product, we developed linguistic features on both supervised and unsupervised learning models which include named-entity recognition, semantic role labeling, sentiment analysis, and dependency parsing.
 
-The details of the project can be found here: [project plan](https://github.ubc.ca/iameleve/Capstone_govt_of_canada/blob/master/project_plan/project_plan.ipynb)
+By the end of the project, our supervised learning models have achieved 93% accuracy on domain classification and 86% accuracy on vaccine tag classification, which is a 20% improvement compared to the CDAT baseline. Furthermore, our unsupervised learning models have successfully generated new topic groups which could help CDAT better identify the users’ needs. 
+
+
+The details of the project can be found here: [project plan](/project_plan/project_plan.ipynb)
+
+
 
 
 ## Folders
 
 ```
 .
-├── data
-│   ├── vaccine.csv
-│   ├── taxes.csv
-│   ├── benefits.csv
-│   └── travel.csv
 ├── EDA
 │   ├── EDA_on_sample_data_of_Canada_CA.md
 │   ├── EDA_on_sample_data_of_Canada_CA.docx
@@ -47,11 +47,9 @@ The details of the project can be found here: [project plan](https://github.ubc.
 
 
 ## Group members:
-- Alex Chen
+- Yundong Yao
 - Jan Urquico
 - Linxuan Yang
-- Yundong Yao
+- Alex Chen
 
 
-## Mentor:
-- Jungyeul Park
