@@ -38,7 +38,6 @@ The details of the project can be found here: [project plan](/project_plan/proje
 │       ├── parsing.ipynb
 │       ├── sentiment.ipynb
 │       └── SRL
-├── meeting_minutes
 ├── meetubg_slides
 └── project_plan
     └── project_plan.ipynb
